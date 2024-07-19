@@ -25,7 +25,7 @@ func worker(id int, taskQueue <-chan int, results chan<- int, wg *sync.WaitGroup
 	}
 }
 
-func fanOutMain() {
+func FanOutMain() {
 	const numWorkers = 3  // number of workers will be used to process tasks from source
 	const numTasks = 10
 
